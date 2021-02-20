@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <title>Welcome to Rio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+
+    <nav class="header-menu">
+
+      <div class="header-navbar">
+
+        <ul class="header-navbar__list">
+          <li class="header-navbar__item">
+            <a class="header-navbar__link" href="#">Home</a>
+          </li>
+          <li class="header-navbar__item">
+            <a class="header-navbar__link" href="#">Our Apartment</a>
+          </li>
+          <li class="header-navbar__item">
+            <a class="header-navbar__link" href="#">Rio</a>
+          </li>
+          <li class="header-navbar__item">
+            <a class="header-navbar__link" href="#">Contact</a>
+          </li>
+
+          <li class="border">
+          </li>
+          <li class="header-navbar__item">
+            <a class="header-navbar__link header-navbar__link__accent" href="#">Book</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="header-content">
+      <div class="header-content__container">
+        <span class="header-content__accent">Be my guest</span>
+        <h1 class="header-content__title">Welcome to Rio</h1>
+      </div>
+    </div>
+
+  </header>
+
+
+  <main class="main">
+    <div class="main-container">
+      <form action="app.php" method="get">
+
+        <div class="booking-form">
+          <div class="booking-form__item">
+            <div class="booking-item__label">
+              <label for="datein">Check In</label>
+            </div>
+
+            <div class="booking-item__input booking-item__input--long">
+              <input type="date" name="datein" id="datein" placeholder="DD/MM/YYYY">
+            </div>
+          </div>
+
+
+          <div class="booking-form__item">
+            <div class="booking-item__label">
+              <label for="dateout">Check Out</label>
+            </div>
+
+            <div class="booking-item__input booking-item__input--long">
+              <input type="date" name="dateout" id="dateout" placeholder="DD/MM/YYYY">
+            </div>
+          </div>
+
+          <div class="booking-form__item">
+            <div class="booking-item__label">
+              <label for="adults">Adults</label>
+            </div>
+
+            <div class="booking-item__input booking-item__input--short">
+              <input type="number" name="adults" id="adults" placeholder="1">
+            </div>
+          </div>
+
+          <div class="booking-form__item">
+            <div class="booking-item__label">
+              <label for="kids">Kids</label>
+            </div>
+
+            <div class="booking-item__input booking-item__input--short">
+              <input type="number" name="adults" id="kids" placeholder="0">
+            </div>
+          </div>
+
+          <div class="booking-form__item">
+            <button class="booking-form__btn">Search</button>
+          </div>
+
+        </div>
+
+      </form>
+
+
+      <div class="main-content__container">
+            <div class="main-content__title">
+              <h2>A Home in the Heart of the City</h2>
+              <hr>
+              <div class="main-content__description">
+                <p>Stay in a beautiful highrice in Ipanema just off the beach close to many world-class cafes and restaraunts. Enjoy Bossa Nova with a cold beer!</p>
+              </div>
+            </div>
+
+
+        <div class="main-content__body">
+          <div class="card">
+            <div class="card__title">
+              <h3>Our Apartament</h3>
+              <hr>
+            </div>
+            <div class="card__image image-big">
+              <img src="/assets/images/apartment1.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__image image-small">
+              <img src="/assets/images/apartment2.jpg" alt="">
+            </div>
+
+            <div class="card__description">
+              <p>The apartament is spacious with high ceilings. Large windows, an open balcony and a beautiful view of the beach. Stay cool with central A/C and with-down comfortably in the queen sized bedroom.</p>
+              <a href="#" class="card__description-link">Book now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="container-card-bottom">
+      <div class="card">
+        <div class="card__image image-big">
+          <img src="/assets/images/location.jpg" alt="">
+        </div>
+
+        <div class="card__title card__title--bottom">
+          <h3>Location</h3>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-description-bottom">
+      <p class="bottom-card__description">Conveniently located just opposite Leblon Beach in Ipanema, our apartament will sweep you into the charm and excitements of Rio! Dine at one of our neighborhood's many world-renowned restaurants, enjoy fresh-squeezed juices from one of the colourful stalls along the beach, and don't miss live bossy-nova show in one of the local bars.</p>
+      <p><a href="#" class="bottom-card__link">View map</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="contacts">
+      <div class="contscts__title">
+        <h4>Contact Us</h4>
+      </div>
+          <hr class="contacts-hr" align="left">
+      <div class="contacts__description">
+        <p>Ask us anything! We're here to answer any questions you have.</p>
+        <p>Email: <a href="mailto:info@mysite.com" class="contacts__link">info@mysite.com</a></p>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="contscts__title">
+        <h4>Follow Us</h4>
+      </div>
+      <hr class="contacts-hr" align="left">
+      <div class="contacts__description">
+        <div class="social">
+          <a href="#"><img src="/assets/images/tripadvisor.png" alt="" class="social-icon"></a>
+          <a href="#"><img src="/assets/images/facebook.png" alt="" class="social-icon"></a>
+          <a href="#"><img src="/assets/images/instagram.png" alt="" class="social-icon"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="contscts__title">
+        <h4>Subscribe for Updates & Offers</h4>
+      </div>
+      <hr class="contacts-hr" align="left">
+      <div class="contacts__description">
+        <form action="app.php" method="get">
+
+          <div class="subscribe-form">
+              <div class="subscribe-item">
+                <input type="email" name="email" placeholder="Enter your email here*" class="subscribe-item__input">
+              </div>
+
+            <div class="subscribe-form__item">
+              <button class="subscribe-form__btn">Subscribe Now</button>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 20px;
+  max-width: 992px;
+  margin: 0 auto;
+
+}
+
+.contacts {
+    width: 30%;
+  padding: 20px 15px 0;
+  &-hr {
+    height: 2px;
+    background-color: #dabc74;
+    border: 0;
+    width: 50px
+  }
+
+  &__description {
+    padding-top: 20px;
+  }
+
+  &__link  {
+    color: #6ba3a2;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+}
+
+.social {
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+
+  &-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.subscribe-item  {
+
+  input{
+    width: 91%;
+    padding: 5px 15px 5px 10px;
+    border: 1px solid $color-gray-bg-light;
+
+
+    &::placeholder {
+      color: $color-gray-bg-light;
+      font-size: 0.8em;
+    }
+  }
+}
+
+.subscribe-form__btn {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: $color-gray-bg-light;
+  border: 0;
+  color: $color-light;
+  font-size: 0.8em;
+}
