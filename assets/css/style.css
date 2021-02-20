@@ -693,7 +693,7 @@ body {
 }
 
 .card__description {
-  padding: 40px 70px;
+  padding: 40px 78px;
   max-width: 670px;
   width: 61%;
   max-height: 300px;
@@ -852,7 +852,7 @@ body {
 .subscribe-form__btn {
   margin-top: 5px;
   width: 100%;
-  padding: 5px 10px;
+  padding: 8px 10px;
   background-color: #8e8e8e;
   border: 0;
   color: #ffffff;
