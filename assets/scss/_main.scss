@@ -146,6 +146,7 @@
     max-height: 270px;
     width: auto;
     position: relative;
+    margin-top: 0;
 
     @media (max-width: 678px) {
       flex: 100% 0;
@@ -165,12 +166,9 @@
   flex: 30% 0;
   position: relative;
   max-height: 270px;
-  margin-top: 0;
 }
 .image-big {
-  margin-top: 1px;
   flex: 1 60%;
-  margin-top: 0;
 
 }
 
