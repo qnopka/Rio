@@ -526,6 +526,7 @@ body {
   font-size: 4.0625em;
   font-weight: 400;
   color: #ffffff;
+  padding: 2vw;
 }
 
 .header-menu {
@@ -554,7 +555,7 @@ body {
 }
 
 .header-navbar__item {
-  margin: 20px 50px;
+  margin: 1vw 3vw;
 }
 
 .header-navbar__link {
@@ -628,7 +629,8 @@ body {
 
 .booking-item__input--long input,
 .booking-item__input booking-form__btn {
-  width: 250px;
+  max-width: 250px;
+  width: 25vw;
   border: 1px solid #e5e5e5;
   padding: 5px 10px;
   margin-top: 5px;
@@ -652,7 +654,7 @@ body {
 
 .main-content__description p {
   text-align: center;
-  padding: 20px 100px;
+  padding: 1vw 5vw;
   line-height: 1.5em;
 }
 
@@ -673,7 +675,7 @@ body {
 }
 
 .card__title {
-  padding: 90px;
+  padding: 4.7vw;
   max-width: 300px;
   max-height: 300px;
   background-color: #6ba3a2;
@@ -697,7 +699,7 @@ body {
 }
 
 .card__description {
-  padding: 40px 78px;
+  padding: 2vw 5.5vw;
   max-width: 670px;
   width: 61%;
   max-height: 300px;
@@ -724,19 +726,22 @@ body {
 }
 
 .card__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
 .image-small {
-  width: 300px;
+  width: 17.25vw;
   position: relative;
   height: 270px;
 }
 
 .image-big {
   margin-top: 1px;
+  width: 82.75vw;
 }
 
 .container-card-bottom {
@@ -746,7 +751,7 @@ body {
 }
 
 .container-description-bottom {
-  padding: 20px;
+  padding: 1em;
   max-width: 992px;
   background-color: #ffffff;
   margin: 0 auto;
@@ -760,7 +765,7 @@ body {
   line-height: 1.5em;
   font-weight: 400;
   font-size: 0.9em;
-  padding: 50px 200px 20px;
+  padding: 1vw 5vw 1vw;
 }
 
 .bottom-card__link {
