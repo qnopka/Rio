@@ -48,6 +48,7 @@
       font-size: 4.0625em;
       font-weight: 400;
       color: $color-light;
+      text-align: center;
       padding: 2vw;
     }
   }
@@ -69,7 +70,7 @@
     list-style: none;
     font-size: 1.125rem;
     z-index: 1;
-    padding: 2vw 0;
+    padding: 0;
   }
 
   &__item {

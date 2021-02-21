@@ -526,6 +526,7 @@ body {
   font-size: 4.0625em;
   font-weight: 400;
   color: #ffffff;
+  text-align: center;
   padding: 2vw;
 }
 
@@ -552,7 +553,7 @@ body {
   list-style: none;
   font-size: 1.125rem;
   z-index: 1;
-  padding: 2vw 0;
+  padding: 0;
 }
 
 .header-navbar__item {
@@ -750,6 +751,7 @@ body {
   max-height: 270px;
   width: auto;
   position: relative;
+  margin-top: 0;
 }
 
 .card__image img {
@@ -766,15 +768,12 @@ body {
           flex: 30% 0;
   position: relative;
   max-height: 270px;
-  margin-top: 0;
 }
 
 .image-big {
-  margin-top: 1px;
   -webkit-box-flex: 1;
       -ms-flex: 1 60%;
           flex: 1 60%;
-  margin-top: 0;
 }
 
 .container-card-bottom {
