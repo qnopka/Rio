@@ -1,57 +1,59 @@
 .main {
-  margin: -80px auto 0;
   z-index: 1;
-  &-container {
-    padding: 20px 20px 0 ;
-    max-width: 992px;
-    background-color: $color-light;
-    margin: -40px auto 0;
-    z-index: 1;
-    }
 
+  margin: -80px auto 0;
+  &-container {
+    z-index: 1;
+
+    max-width: 992px;
+    margin: -40px auto 0;
+    padding: 20px 20px 0 ;
+
+    background-color: $color-light;
   }
+}
 
 .booking-form {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 0 20px 0;
-  background: $color-light;
   flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0 0 20px 0;
+
+  background: $color-light;
 
   &__btn {
-    background-color: $color-accent;
-    color: $color-light;
-    border: 0px;
     margin-top: 20px;
     padding: 8px 60px;
 
+    color: $color-light;
+    border: 0;
+    background-color: $color-accent;
   }
 }
 
 .booking-item__input {
+  &--short input {
+    width: 50px;
+    margin-top: 5px;
+    padding: 5px 10px;
 
-    &--short input{
-      width: 50px;
-      border: 1px solid $color-gray-light;
-      padding:5px 10px;
-      margin-top: 5px;
-
-    }
+    border: 1px solid $color-gray-light;
+  }
 
   &--long input,
   booking-form__btn {
-    max-width: 250px;
     width: 25vw;
-    border: 1px solid $color-gray-light;
-    padding: 5px 10px;
+    max-width: 250px;
     margin-top: 5px;
+    padding: 5px 10px;
 
+    border: 1px solid $color-gray-light;
   }
 }
 
 .main-content {
-
   &__container {
     margin: 40px auto 0;
   }
@@ -59,21 +61,25 @@
   &__title {
     h2 {
       text-align: center;
+
       font-weight: 400;
     }
 
     hr {
+      width: 50px;
       height: 2px;
-      background-color: #dabc74;
+
       border: 0;
-      width: 50px
+      background-color: #dabc74;
     }
   }
 
   &__description {
     p {
-      text-align: center;
       padding: 1vw 5vw;
+
+      text-align: center;
+
       line-height: 1.5em;
     }
   }
@@ -82,70 +88,81 @@
 .card {
   display: flex;
   align-items: stretch;
-  margin-right: -20px;
-  margin-left: -20px;
   flex-flow: row wrap;
   justify-content: stretch;
 
+  margin-right: -20px;
+  margin-left: -20px;
+
 
   &__title {
-    background-color: $color-accent;
-    flex: 30% 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex: 30% 0;
     flex-flow: column wrap;
+    justify-content: center;
+
     max-height: 270px;
+
+    background-color: $color-accent;
 
     @media (max-width: 678px) {
       flex: 100% 0;
     }
     h3 {
       text-align: center;
-      font-weight: 400;
+
       color: $color-light;
+
+      font-weight: 400;
     }
 
     hr {
+      width: 50px;
       height: 2px;
-      background-color: #dabc74;
+
       border: 0;
-      width: 50px
+      background-color: #dabc74;
     }
   }
 
   &__description {
-    margin: 0 5.5vw;
-    height: 270px;
-    background-color: $color-light;
-    flex: 1 25%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex: 1 25%;
     flex-flow: column wrap;
+    justify-content: center;
+
+    height: 270px;
+    margin: 0 5.5vw;
+
+    background-color: $color-light;
 
     @media (max-width: 678px) {
       flex: 100% 0;
     }
 
     p {
-      line-height: 1.5em;
-      font-weight: 400;
       font-size: 0.9em;
+      font-weight: 400;
+      line-height: 1.5em;
     }
 
     &-link {
-      color: $color-accent;
+      margin-top: 20px;
+
       text-decoration: none;
       text-transform: uppercase;
-      margin-top: 20px;
+
+      color: $color-accent;
     }
   }
 
   &__image {
-    max-height: 270px;
-    width: auto;
     position: relative;
+
+    width: auto;
+    max-height: 270px;
     margin-top: 0;
 
     @media (max-width: 678px) {
@@ -153,36 +170,39 @@
     }
 
     & img {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
       overflow: hidden;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
     }
   }
-
 }
 
 .image-small {
-  flex: 30% 0;
   position: relative;
+
+  flex: 30% 0;
+
   max-height: 270px;
 }
 .image-big {
   flex: 1 60%;
-
 }
 
 .container-card-bottom {
-  padding: 0 20px 0 ;
   max-width: 992px;
   margin: 30px auto 0;
+  padding: 0 20px 0 ;
 }
 
 .container-description-bottom {
-  padding: 1em;
   max-width: 992px;
-  background-color: $color-light;
   margin: 0 auto;
+  padding: 1em;
+
+  background-color: $color-light;
 
   p {
     text-align: center;
@@ -190,19 +210,20 @@
 }
 
 .bottom-card {
-
   &__description {
-    line-height: 1.5em;
-    font-weight: 400;
-    font-size: 0.9em;
-
     padding: 1vw 5vw 1vw;
+
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.5em;
   }
 
   &__link {
-    color: $color-accent;
+    margin-top: 20px;
+
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 20px;
+
+    color: $color-accent;
   }
 }

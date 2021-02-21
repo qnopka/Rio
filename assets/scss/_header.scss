@@ -1,55 +1,76 @@
 .header {
+  z-index: 99;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 
   min-height: 75vh;
   padding: $gap;
 
+  background-image: url(../../assets/images/rio.jpg);
   background-position: 50% 50%;
   background-size: cover;
-  background-image: url(../../assets/images/rio.jpg);
-  z-index: 99;
 
   &-content {
-
     &__container {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
       justify-content: center;
 
+      padding: 20% 0;
     }
 
     &__accent {
-      text-transform: uppercase;
-      font-family: $font-header;
       letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: $color-light;
+
+      font-family: $font-header;
       font-size: 0.95em;
       font-weight: 400;
-      color: $color-light;
 
 
       &:before {
-        content: url("../../assets/images/line.png");
         padding: 0 10px 0 0;
+
+        content: url("../../assets/images/line.png");
+        @media (max-width: 288px) {
+          display: none;
+
+          padding: 0;
+        }
       }
 
       &:after {
-        content: url("../../assets/images/line.png");
         padding: 0 0 0 10px;
+
+        content: url("../../assets/images/line.png");
+        @media (max-width: 288px) {
+          display: none;
+
+          padding: 0;
+        }
       }
     }
 
     &__title {
-      font-family: $font-header;
+      padding: 2vw;
+
+      text-align: center;
       letter-spacing: 0.03em;
+
+      color: $color-light;
+
+      font-family: $font-header;
       font-size: 4.0625em;
       font-weight: 400;
-      color: $color-light;
-      text-align: center;
-      padding: 2vw;
+      @media (max-width: 678px) {
+        font-size: 3em;
+      }
     }
   }
 }
@@ -62,34 +83,37 @@
 }
 .header-navbar {
   &__list {
+    z-index: 1;
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 0;
 
     list-style: none;
+
     font-size: 1.125rem;
-    z-index: 1;
-    padding: 0;
   }
 
   &__item {
     margin: 1vw 3vw;
-
   }
 
   &__link {
     transition: color 0.5s;
-    color: $color-light;
     text-decoration: none;
-    font-size: 1em;
+
+    color: $color-light;
+
     font-family: $font-main;
+    font-size: 1em;
 
     &__accent {
-      background-color: #878586;
       padding: 10px 30px;
 
-
+      background-color: #878586;
     }
 
     &:hover {
@@ -99,7 +123,9 @@
 }
 
 .border {
-  background-color: $color-light;
-  content: "|";
   width: 1px;
+
+  content: "|";
+
+  background-color: $color-light;
 }

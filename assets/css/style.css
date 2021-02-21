@@ -499,6 +499,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20% 0;
 }
 
 .header-content__accent {
@@ -901,6 +902,9 @@ body {
 }
 
 @media (max-width: 678px) {
+  .header-content__title {
+    font-size: 3em;
+  }
   .card__title {
     -webkit-box-flex: 100%;
         -ms-flex: 100% 0;
@@ -915,5 +919,16 @@ body {
     -webkit-box-flex: 100%;
         -ms-flex: 100% 0;
             flex: 100% 0;
+  }
+}
+
+@media (max-width: 288px) {
+  .header-content__accent:before {
+    padding: 0;
+    display: none;
+  }
+  .header-content__accent:after {
+    padding: 0;
+    display: none;
   }
 }
