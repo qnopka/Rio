@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="flex flex-align-items flex-justify-items">
 
     <nav class="header-menu">
 
       <div class="header-navbar">
 
-        <ul class="header-navbar__list">
+        <ul class="header-navbar__list flex flex-justify-items">
           <li class="header-navbar__item">
             <a class="header-navbar__link" href="#">Home</a>
           </li>
@@ -33,7 +33,7 @@
           <li class="border">
           </li>
           <li class="header-navbar__item">
-            <a class="header-navbar__link header-navbar__link__accent" href="#">Book</a>
+            <button class="header-navbar__link header-navbar__link__accent" href="#">Book</button>
           </li>
         </ul>
 
@@ -41,27 +41,27 @@
     </nav>
 
     <div class="header-content">
-      <div class="header-content__container">
+      <div class="header-content__container flex flex-align-items flex-justify-items">
         <span class="header-content__accent">Be my guest</span>
-        <h1 class="header-content__title">Welcome to Rio</h1>
+        <h1 class="header-content__title text-center">Welcome to Rio</h1>
       </div>
     </div>
 
   </header>
 
 
-  <main class="main">
+  <main>
     <div class="main-container">
       <form action="app.php" method="get">
 
-        <div class="booking-form">
+        <div class="booking-form flex flex-wrap flex-align-items">
           <div class="booking-form__item">
             <div class="booking-item__label">
               <label for="datein">Check In</label>
             </div>
 
             <div class="booking-item__input booking-item__input--long">
-              <input type="date" name="datein" id="datein" placeholder="DD/MM/YYYY">
+              <input class="text-center" type="date" name="datein" id="datein" placeholder="DD/MM/YYYY">
             </div>
           </div>
 
@@ -72,7 +72,7 @@
             </div>
 
             <div class="booking-item__input booking-item__input--long">
-              <input type="date" name="dateout" id="dateout" placeholder="DD/MM/YYYY">
+              <input class="text-center" type="date" name="dateout" id="dateout" placeholder="DD/MM/YYYY">
             </div>
           </div>
 
@@ -82,7 +82,7 @@
             </div>
 
             <div class="booking-item__input booking-item__input--short">
-              <input type="number" name="adults" id="adults" placeholder="1">
+              <input class="text-center" type="number" name="adults" id="adults" placeholder="1">
             </div>
           </div>
 
@@ -92,7 +92,7 @@
             </div>
 
             <div class="booking-item__input booking-item__input--short">
-              <input type="number" name="adults" id="kids" placeholder="0">
+              <input class="text-center" type="number" name="adults" id="kids" placeholder="0">
             </div>
           </div>
 
@@ -116,22 +116,22 @@
 
 
         <div class="main-content__body">
-          <div class="card">
+          <div class="card flex">
             <div class="card__title">
               <h3>Our Apartament</h3>
               <hr>
             </div>
             <div class="card__image image-big">
-              <img src="./assets/images/apartment1.jpg" alt="">
+              <img src="./assets/images/apartment1.jpg" alt="Our Apartament">
             </div>
           </div>
 
-          <div class="card">
+          <div class="card flex">
             <div class="card__image image-small">
-              <img src="./assets/images/apartment2.jpg" alt="">
+              <img src="./assets/images/apartment2.jpg" alt="Our Apartament - bedroom">
             </div>
 
-            <div class="card__description">
+            <div class="card__description flex flex-align-items flex-justify-items">
               <p>The apartament is spacious with high ceilings. Large windows, an open balcony and a beautiful view of the beach. Stay cool with central A/C and with-down comfortably in the queen sized bedroom.</p>
               <a href="#" class="card__description-link">Book now</a>
             </div>
@@ -144,9 +144,9 @@
 
 
     <div class="container-card-bottom">
-      <div class="card">
+      <div class="card flex flex-align-items flex-justify-items">
         <div class="card__image image-big">
-          <img src="./assets/images/location.jpg" alt="">
+          <img src="./assets/images/location.jpg" alt="Location">
         </div>
 
         <div class="card__title">
@@ -162,7 +162,7 @@
     </div>
   </main>
 
-  <footer class="footer">
+  <footer class="flex flex-wrap">
     <div class="contacts">
       <div class="contscts__title">
         <h4>Contact Us</h4>
@@ -180,10 +180,10 @@
       </div>
       <hr class="contacts-hr" align="left">
       <div class="contacts__description">
-        <div class="social">
-          <a href="#"><img src="./assets/images/tripadvisor.png" alt="" class="social-icon"></a>
-          <a href="#"><img src="./assets/images/facebook.png" alt="" class="social-icon"></a>
-          <a href="#"><img src="./assets/images/instagram.png" alt="" class="social-icon"></a>
+        <div class="social flex flex-align-items flex-wrap">
+          <a href="#"><img src="./assets/images/tripadvisor.png" alt="tripadvisor" class="social-icon"></a>
+          <a href="#"><img src="./assets/images/facebook.png" alt="facebook" class="social-icon"></a>
+          <a href="#"><img src="./assets/images/instagram.png" alt="instagram" class="social-icon"></a>
         </div>
       </div>
     </div>
@@ -197,11 +197,11 @@
         <form action="app.php" method="get">
 
           <div class="subscribe-form">
-              <div class="subscribe-item">
-                <input type="email" name="email" placeholder="Enter your email here*" class="subscribe-item__input">
+              <div class="subscribe-item flex">
+                <input class="text-center" type="email" name="email" placeholder="Enter your email here*" class="subscribe-item__input">
               </div>
 
-            <div class="subscribe-form__item">
+            <div class="subscribe-form__item flex">
               <button class="subscribe-form__btn">Subscribe Now</button>
             </div>
 

@@ -1,35 +1,46 @@
-.main {
+main {
   z-index: 1;
 
-  margin: -80px auto 0;
-  &-container {
-    z-index: 1;
+  margin: (-$gap * 4) auto 0;
+}
 
-    max-width: 992px;
-    margin: -40px auto 0;
-    padding: 20px 20px 0 ;
+.main-container {
+  z-index: 1;
 
-    background-color: $color-light;
-  }
+  max-width: 992px;
+  margin: -40px auto 0;
+  padding: $gap $gap 0 ;
+
+  background-color: $color-light;
 }
 
 .booking-form {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
-  padding: 0 0 20px 0;
+  padding: 0 0 $gap 0;
 
   background: $color-light;
 
+  &__item {
+    margin-bottom: 15px;
+  }
+
   &__btn {
-    margin-top: 20px;
-    padding: 8px 60px;
+    margin-top: 24px;
+    padding: 9px ($gap * 3);
 
     color: $color-light;
     border: 0;
     background-color: $color-accent;
+    font-family: $font-main;
+
+    @media (max-width: 380px) {
+      padding: 9px 10vw;
+    }
+
+    @media (max-width: 300px) {
+      padding: 9px 5vw;
+    }
   }
 }
 
@@ -37,19 +48,41 @@
   &--short input {
     width: 50px;
     margin-top: 5px;
-    padding: 5px 10px;
+    padding: 8px 10px;
 
     border: 1px solid $color-gray-light;
+
+    @media (max-width: 620px) {
+      min-width: 24vw;
+    }
+
+    @media (max-width: 510px) {
+      min-width: 20vw;
+    }
+
+    @media (max-width: 445px) {
+      min-width: 15vw;
+    }
+
+    @media (max-width: 380px) {
+      max-width: 6vw;
+    }
+
+
   }
 
   &--long input,
-  booking-form__btn {
-    width: 25vw;
+  .booking-form__btn {
+    width: 30vw;
     max-width: 250px;
     margin-top: 5px;
     padding: 5px 10px;
 
     border: 1px solid $color-gray-light;
+
+    @media (max-width: 620px) {
+      min-width: 85vw;
+    }
   }
 }
 
@@ -65,13 +98,6 @@
       font-weight: 400;
     }
 
-    hr {
-      width: 50px;
-      height: 2px;
-
-      border: 0;
-      background-color: #dabc74;
-    }
   }
 
   &__description {
@@ -86,7 +112,6 @@
 }
 
 .card {
-  display: flex;
   align-items: stretch;
   flex-flow: row wrap;
   justify-content: stretch;
@@ -127,11 +152,8 @@
   }
 
   &__description {
-    display: flex;
-    align-items: center;
     flex: 1 25%;
     flex-flow: column wrap;
-    justify-content: center;
 
     height: 270px;
     margin: 0 5.5vw;
@@ -198,7 +220,7 @@
 }
 
 .container-description-bottom {
-  max-width: 992px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 1em;
 
@@ -211,8 +233,6 @@
 
 .bottom-card {
   &__description {
-    padding: 1vw 5vw 1vw;
-
     font-size: 0.9em;
     font-weight: 400;
     line-height: 1.5em;

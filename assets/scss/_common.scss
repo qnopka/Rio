@@ -6,3 +6,35 @@ body {
   font-weight: 400;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-justify-items {
+  justify-content: center;
+}
+
+.flex-align-items {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+hr {
+  height: 2px;
+  width: 50px;
+  border: 0;
+  background-color: #dabc74;
+}
+
+input {
+  font-family: $font-main;
+  color: $color-gray-bg-light;
+  margin-right: 5px;
+}

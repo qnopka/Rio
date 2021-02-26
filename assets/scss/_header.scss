@@ -1,25 +1,17 @@
-.header {
+header {
   z-index: 99;
-
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
-
   min-height: 75vh;
   padding: $gap;
 
   background-image: url(../../assets/images/rio.jpg);
   background-position: 50% 50%;
   background-size: cover;
+}
 
-  &-content {
+  .header-content {
     &__container {
-      display: flex;
-      align-items: center;
       flex-direction: column;
-      justify-content: center;
-
       padding: 20% 0;
     }
 
@@ -59,8 +51,6 @@
 
     &__title {
       padding: 2vw;
-
-      text-align: center;
       letter-spacing: 0.03em;
 
       color: $color-light;
@@ -73,7 +63,7 @@
       }
     }
   }
-}
+
 
 .header-menu {
   position: absolute;
@@ -84,12 +74,7 @@
 .header-navbar {
   &__list {
     z-index: 1;
-
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
     padding: 0;
 
     list-style: none;
@@ -99,6 +84,16 @@
 
   &__item {
     margin: 1vw 3vw;
+    align-self: center;
+
+    @media (max-width: 532px) {
+      margin: 1vw 2vw;
+    }
+
+    @media (max-width: 305px) {
+      margin: 1vw 1vw;
+    }
+
   }
 
   &__link {
@@ -110,9 +105,21 @@
     font-family: $font-main;
     font-size: 1em;
 
+    @media (max-width: 532px) {
+      font-size: 0.8em;
+    }
+
+    @media (max-width: 350px) {
+      font-size: 0.7em;
+    }
+
+    @media (max-width: 290px) {
+      font-size: 0.6em;
+    }
+
     &__accent {
       padding: 10px 30px;
-
+      border: 0;
       background-color: #878586;
     }
 
@@ -124,8 +131,10 @@
 
 .border {
   width: 1px;
-
   content: "|";
-
   background-color: $color-light;
+
+  @media (max-width: 350px) {
+    display: none;
+  }
 }
