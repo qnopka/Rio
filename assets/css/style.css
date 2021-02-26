@@ -497,9 +497,12 @@ hr {
   background-color: #dabc74;
 }
 
-input {
+input, button {
   font-family: Raleway, sans-serif;
   color: #8e8e8e;
+}
+
+input {
   margin-right: 5px;
 }
 
@@ -633,7 +636,6 @@ main {
   color: #fff;
   border: 0;
   background-color: #6ba3a2;
-  font-family: Raleway, sans-serif;
 }
 
 .booking-item__input--short input {
@@ -880,7 +882,6 @@ footer {
   color: #fff;
   border: 0;
   background-color: #8e8e8e;
-  font-family: Raleway, sans-serif;
   font-size: 0.8em;
 }
 

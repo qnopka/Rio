@@ -32,7 +32,6 @@ main {
     color: $color-light;
     border: 0;
     background-color: $color-accent;
-    font-family: $font-main;
 
     @media (max-width: 380px) {
       padding: 9px 10vw;

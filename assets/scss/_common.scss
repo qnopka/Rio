@@ -33,8 +33,11 @@ hr {
   background-color: #dabc74;
 }
 
-input {
+input, button {
   font-family: $font-main;
   color: $color-gray-bg-light;
+}
+
+input {
   margin-right: 5px;
 }
