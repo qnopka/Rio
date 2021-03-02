@@ -68,10 +68,10 @@ footer {
     width: 89%;
     @media (max-width: 899px) {
       padding: 5px 1%;
-      width: 68%;
+      width: 50%;
     }
     @media (max-width: 550px) {
-      width: 88%;
+      width: 58%;
     }
 
     &::placeholder {
@@ -93,10 +93,10 @@ footer {
   font-size: 0.8em;
 
   @media (max-width: 899px) {
-    width: 70%;
+    width: 52%;
     padding: 5px 1%;
   }
   @media (max-width: 550px) {
-    width: 90%;
+    width: 60%;
   }
 }
