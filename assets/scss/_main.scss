@@ -79,8 +79,28 @@ main {
 
     border: 1px solid $color-gray-light;
 
-    @media (max-width: 620px) {
-      min-width: 85vw;
+    @media (max-width: 920px) {
+      min-width: 41vw;
+    }
+
+    @media (max-width: 530px) {
+      min-width: 40vw;
+    }
+
+    @media (max-width: 470px) {
+      min-width: 38vw;
+    }
+
+    @media (max-width: 430px) {
+      min-width: 35vw;
+    }
+
+    @media (max-width: 320px) {
+      min-width: 32vw;
+    }
+
+    @media (max-width: 262px) {
+      min-width: 28vw;
     }
   }
 }

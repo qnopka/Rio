@@ -841,10 +841,11 @@ footer {
 
 .subscribe-item input {
   padding: 5px 15px 5px 10px;
-  border: 1px solid #8e8e8e;
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
+  border: 1px solid #8e8e8e;
+  width: 89%;
 }
 
 .subscribe-item input::-webkit-input-placeholder {
@@ -875,7 +876,7 @@ footer {
 .subscribe-form__btn {
   width: 98%;
   margin-top: 5px;
-  padding: 8px 10px;
+  padding: 8px 15px 8px 10px;
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
@@ -883,6 +884,13 @@ footer {
   border: 0;
   background-color: #8e8e8e;
   font-size: 0.8em;
+}
+
+@media (max-width: 920px) {
+  .booking-item__input--long input,
+  .booking-item__input .booking-form__btn {
+    min-width: 41vw;
+  }
 }
 
 @media (max-width: 899px) {
@@ -895,8 +903,13 @@ footer {
   .contacts:nth-of-type(3) {
     width: 100%;
   }
+  .subscribe-item input {
+    padding: 5px 1%;
+    width: 68%;
+  }
   .subscribe-form__btn {
-    width: 99%;
+    width: 70%;
+    padding: 5px 1%;
   }
 }
 
@@ -925,9 +938,20 @@ footer {
   .booking-item__input--short input {
     min-width: 24vw;
   }
-  .booking-item__input--long input,
-  .booking-item__input .booking-form__btn {
-    min-width: 85vw;
+}
+
+@media (max-width: 600px) {
+  .header-navbar__link {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 550px) {
+  .subscribe-item input {
+    width: 88%;
+  }
+  .subscribe-form__btn {
+    width: 90%;
   }
 }
 
@@ -935,8 +959,12 @@ footer {
   .header-navbar__item {
     margin: 1vw 2vw;
   }
-  .header-navbar__link {
-    font-size: 0.8em;
+}
+
+@media (max-width: 530px) {
+  .booking-item__input--long input,
+  .booking-item__input .booking-form__btn {
+    min-width: 40vw;
   }
 }
 
@@ -946,9 +974,26 @@ footer {
   }
 }
 
+@media (max-width: 470px) {
+  .booking-item__input--long input,
+  .booking-item__input .booking-form__btn {
+    min-width: 38vw;
+  }
+}
+
 @media (max-width: 445px) {
   .booking-item__input--short input {
     min-width: 15vw;
+  }
+}
+
+@media (max-width: 430px) {
+  .header-navbar__link {
+    font-size: 0.7em;
+  }
+  .booking-item__input--long input,
+  .booking-item__input .booking-form__btn {
+    min-width: 35vw;
   }
 }
 
@@ -963,10 +1008,17 @@ footer {
 
 @media (max-width: 350px) {
   .header-navbar__link {
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
   .border {
     display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .booking-item__input--long input,
+  .booking-item__input .booking-form__btn {
+    min-width: 32vw;
   }
 }
 
@@ -989,15 +1041,6 @@ footer {
   .contacts:nth-of-type(3) {
     width: 100%;
   }
-  .subscribe-form__btn {
-    width: 98%;
-  }
-}
-
-@media (max-width: 290px) {
-  .header-navbar__link {
-    font-size: 0.6em;
-  }
 }
 
 @media (max-width: 288px) {
@@ -1008,5 +1051,12 @@ footer {
   .header-content__accent:after {
     display: none;
     padding: 0;
+  }
+}
+
+@media (max-width: 262px) {
+  .booking-item__input--long input,
+  .booking-item__input .booking-form__btn {
+    min-width: 28vw;
   }
 }
