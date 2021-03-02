@@ -887,6 +887,9 @@ footer {
 }
 
 @media (max-width: 920px) {
+  .booking-item__input--short input {
+    min-width: 30vw;
+  }
   .booking-item__input--long input,
   .booking-item__input .booking-form__btn {
     min-width: 41vw;
@@ -931,6 +934,12 @@ footer {
     -webkit-box-flex: 100%;
         -ms-flex: 100% 0;
             flex: 100% 0;
+  }
+}
+
+@media (max-width: 663px) {
+  .booking-item__input--short input {
+    min-width: 28vw;
   }
 }
 

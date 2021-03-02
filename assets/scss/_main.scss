@@ -51,6 +51,14 @@ main {
 
     border: 1px solid $color-gray-light;
 
+    @media (max-width: 920px) {
+      min-width: 30vw;
+    }
+
+    @media (max-width: 663px) {
+      min-width: 28vw;
+    }
+
     @media (max-width: 620px) {
       min-width: 24vw;
     }
