@@ -886,13 +886,19 @@ footer {
   font-size: 0.8em;
 }
 
+@media (max-width: 940px) {
+  .booking-form__btn {
+    padding: 9px 40px;
+  }
+}
+
 @media (max-width: 920px) {
   .booking-item__input--short input {
     min-width: 30vw;
   }
   .booking-item__input--long input,
   .booking-item__input .booking-form__btn {
-    min-width: 41vw;
+    min-width: 40vw;
   }
 }
 
@@ -913,6 +919,20 @@ footer {
   .subscribe-form__btn {
     width: 52%;
     padding: 5px 1%;
+  }
+}
+
+@media (max-width: 705px) {
+  .booking-item__input--short input {
+    width: 200px;
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 683px) {
+  .booking-item__input--short input {
+    width: 180px;
+    min-width: 100px;
   }
 }
 
@@ -943,15 +963,29 @@ footer {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 642px) {
   .booking-item__input--short input {
-    min-width: 24vw;
+    width: 150px;
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 620px) {
+  .booking-item__input--long input,
+  .booking-item__input .booking-form__btn {
+    min-width: 39vw;
   }
 }
 
 @media (max-width: 600px) {
   .header-navbar__link {
     font-size: 0.8em;
+  }
+}
+
+@media (max-width: 590px) {
+  .booking-item__input--short input {
+    max-width: 20vw;
   }
 }
 
@@ -971,22 +1005,12 @@ footer {
 }
 
 @media (max-width: 530px) {
-  .booking-item__input--long input,
-  .booking-item__input .booking-form__btn {
-    min-width: 40vw;
-  }
-}
-
-@media (max-width: 510px) {
   .booking-item__input--short input {
-    min-width: 20vw;
+    max-width: 18vw;
   }
-}
-
-@media (max-width: 470px) {
   .booking-item__input--long input,
   .booking-item__input .booking-form__btn {
-    min-width: 38vw;
+    min-width: 37vw;
   }
 }
 
@@ -1002,7 +1026,13 @@ footer {
   }
   .booking-item__input--long input,
   .booking-item__input .booking-form__btn {
-    min-width: 35vw;
+    min-width: 34vw;
+  }
+}
+
+@media (max-width: 418px) {
+  .booking-item__input--short input {
+    max-width: 10vw;
   }
 }
 
@@ -1027,7 +1057,7 @@ footer {
 @media (max-width: 320px) {
   .booking-item__input--long input,
   .booking-item__input .booking-form__btn {
-    min-width: 32vw;
+    min-width: 28vw;
   }
 }
 
@@ -1064,8 +1094,14 @@ footer {
 }
 
 @media (max-width: 262px) {
+  .booking-form__btn {
+    padding: 9px 4vw;
+  }
+  .booking-item__input--short input {
+    max-width: 4vw;
+  }
   .booking-item__input--long input,
   .booking-item__input .booking-form__btn {
-    min-width: 28vw;
+    max-width: 24vw;
   }
 }
